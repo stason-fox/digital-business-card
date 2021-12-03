@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #23252C;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;  
+}
+
+.App {  
+  max-width: 317px;
+  height: auto;
+  border-radius: 1rem;
+  background-color: #1A1B21;
+}
+
+.portrait > img {
+  max-width: 317px;
+  height: auto;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.name {
+  display: flex;
+  justify-content: center;   
+}
+
+.name > h1 {
+  padding-top: 1rem;
+  color: #FFF;
+  font-size: 1.6rem;  
+}
+
+.title {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title > h2 {
+  color: #045FD0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.email {
+  display: flex;
+  justify-content: center;
+}
+
+.email > button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.4rem 2.5rem;  
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.email-icon {
+  padding-right: 0.5rem;
+}
+
+.about {    
+  padding: 1.6rem 1.6rem 0 1.6rem;
+  color: #FFF;
+}
+
+.about > h1 {
+  font-size: 1.1rem;
+}
+
+.about > p {  
+  padding-top: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.interests {    
+  padding: 1.6rem 1.6rem 0 1.6rem;
+  color: #FFF;
+}
+
+.interests > h1 {
+  font-size: 1.1rem;
+}
+
+.interests > p {
+  padding-top: 0.25rem;
+  font-size: 0.8rem;  
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 0.9rem 0 0.5rem 0;
+  border-radius: 0 0 1rem 1rem;
+  gap: 1.5rem;
+  background-color: #161619; 
+  font-size: 1.6rem;  
 }
